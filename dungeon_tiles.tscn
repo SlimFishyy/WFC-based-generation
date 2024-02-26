@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://270nf0om0ybc"]
+
+[ext_resource type="PackedScene" uid="uid://d4epsasf7w4cm" path="res://Import/free_modular_low_poly_dungeon_pack.glb" id="1_ox35e"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_ox35e")]
+
+[node name="floor_002" parent="Sketchfab_model/low poly dungeon assets_fbx/RootNode" index="8"]
+transform = Transform3D(100, 0, 0, 0, -4.37114e-06, 100, 0, -100, -4.37114e-06, -1241.86, 20, 300)

@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://be007e5xyk130"]
+
+[ext_resource type="MeshLibrary" uid="uid://eqssatm82x3y" path="res://new_tiles_2.tres" id="1_nbpbp"]
+[ext_resource type="Script" path="res://Wyspa.gd" id="2_clddy"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i7bi4"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_el4dh"]
+sky_material = SubResource("ProceduralSkyMaterial_i7bi4")
+
+[sub_resource type="Environment" id="Environment_w8ky7"]
+background_mode = 2
+sky = SubResource("Sky_el4dh")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Map" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+visible = false
+mesh_library = ExtResource("1_nbpbp")
+cell_size = Vector3(1, 1, 1)
+script = ExtResource("2_clddy")
+h_size = 16
+w_size = 16
+random_seed = "22"
+metadata/_editor_floor_ = Vector3(0, -11, 0)
+
+[node name="Camera3D" type="Camera3D" parent="GridMap"]
+transform = Transform3D(1, 0, 0, 0, 0.0254965, 0.999675, 0, -0.999675, 0.0254965, 10.9173, 27.3538, 17.6817)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="GridMap"]
+environment = SubResource("Environment_w8ky7")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="GridMap"]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+shadow_enabled = true
