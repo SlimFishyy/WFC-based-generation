@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2twigcjqrx8b"
-path.s3tc="res://.godot/imported/BLANK.png-245d7ea3423e17a8a89ca97377903809.s3tc.ctex"
+uid="uid://dxlpphkpmdq8h"
+path.s3tc="res://.godot/imported/road_grass_corner.png-e92ab59568d676ef9d82e345aadab1fa.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://BLANK.png"
-dest_files=["res://.godot/imported/BLANK.png-245d7ea3423e17a8a89ca97377903809.s3tc.ctex"]
+source_file="res://Tiles/road_grass_corner.png"
+dest_files=["res://.godot/imported/road_grass_corner.png-e92ab59568d676ef9d82e345aadab1fa.s3tc.ctex"]
 
 [params]
 

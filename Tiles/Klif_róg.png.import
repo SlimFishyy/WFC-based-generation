@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://1jsp7o5q6okr"
-path.s3tc="res://.godot/imported/Klif_róg.png-9ef24d5edc359177b170a9f92dca36b3.s3tc.ctex"
+path.s3tc="res://.godot/imported/Klif_róg.png-eaa624dd73e1c670038dae4031aeac84.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Klif_róg.png"
-dest_files=["res://.godot/imported/Klif_róg.png-9ef24d5edc359177b170a9f92dca36b3.s3tc.ctex"]
+source_file="res://Tiles/Klif_róg.png"
+dest_files=["res://.godot/imported/Klif_róg.png-eaa624dd73e1c670038dae4031aeac84.s3tc.ctex"]
 
 [params]
 

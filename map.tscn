@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://be007e5xyk130"]
 
-[ext_resource type="MeshLibrary" uid="uid://eqssatm82x3y" path="res://new_tiles_2.tres" id="1_nbpbp"]
+[ext_resource type="MeshLibrary" uid="uid://eqssatm82x3y" path="res://Cells.tres" id="1_nbpbp"]
 [ext_resource type="Script" path="res://Wyspa.gd" id="2_clddy"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_i7bi4"]

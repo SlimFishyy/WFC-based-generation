@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://5jk3rs11qkn3"
-path.s3tc="res://.godot/imported/cliffcorner_2.png-059acfd3388212a9e3e9d49bb7e00374.s3tc.ctex"
+uid="uid://dc5l6dww3m8j4"
+path.s3tc="res://.godot/imported/NORTH.png-eadcdb4253b98d922d602d7d1064bc6e.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://cliffcorner_2.png"
-dest_files=["res://.godot/imported/cliffcorner_2.png-059acfd3388212a9e3e9d49bb7e00374.s3tc.ctex"]
+source_file="res://Tiles/NORTH.png"
+dest_files=["res://.godot/imported/NORTH.png-eadcdb4253b98d922d602d7d1064bc6e.s3tc.ctex"]
 
 [params]
 

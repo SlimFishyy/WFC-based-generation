@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dc5l6dww3m8j4"
-path.s3tc="res://.godot/imported/NORTH.png-1b0c9707a9c59620eb6845f6a56a1410.s3tc.ctex"
+uid="uid://u70fhkus8yal"
+path.s3tc="res://.godot/imported/Woda.png-6f3b0d7b5a0880c4a79dd8526fc3df87.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://NORTH.png"
-dest_files=["res://.godot/imported/NORTH.png-1b0c9707a9c59620eb6845f6a56a1410.s3tc.ctex"]
+source_file="res://Tiles/Woda.png"
+dest_files=["res://.godot/imported/Woda.png-6f3b0d7b5a0880c4a79dd8526fc3df87.s3tc.ctex"]
 
 [params]
 

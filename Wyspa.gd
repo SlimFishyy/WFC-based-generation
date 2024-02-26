@@ -1,4 +1,3 @@
-@tool
 extends GridMap
 
 
@@ -10,17 +9,17 @@ extends GridMap
 @export var random_seed : String
 enum {NORTH, EAST, SOUTH, WEST}
 
-const TRAWA = preload("res://Trawa.png")
-const WODA = preload("res://Woda.png")
-const DROGA = preload("res://Droga.png")
-const DROGA_ROG = preload("res://Droga_róg.png")
-const KLIF = preload("res://Klif.png")
-const KLIF_ROG = preload("res://Klif_róg.png")
-const KLIF_WODA = preload("res://Klif_woda.png")
-const WODA_ROG = preload("res://Woda_róg.png")
-const CLIFFCORNER_2 = preload("res://cliffcorner_2.png")
-const ROAD_GRASS_CORNER = preload("res://road_grass_corner.png")
-const WATERCORNER = preload("res://watercorner.png")
+const TRAWA = preload("res://Tiles/Trawa.png")
+const WODA = preload("res://Tiles/Woda.png")
+const DROGA = preload("res://Tiles/Droga.png")
+const DROGA_ROG = preload("res://Tiles/Droga_róg.png")
+const KLIF = preload("res://Tiles/Klif.png")
+const KLIF_ROG = preload("res://Tiles/Klif_róg.png")
+const KLIF_WODA = preload("res://Tiles/Klif_woda.png")
+const WODA_ROG = preload("res://Tiles/Woda_róg.png")
+const CLIFFCORNER_2 = preload("res://Tiles/cliffcorner_2.png")
+const ROAD_GRASS_CORNER = preload("res://Tiles/road_grass_corner.png")
+const WATERCORNER = preload("res:///Tiles/watercorner.png")
 
 var tiles = []
 
@@ -93,8 +92,6 @@ func _ready():
 	var rng = RandomNumberGenerator.new()
 	rng.seed = hash(random_seed)
 	seed(rng.seed)
-	start = false
-	tiles.clear()
 	var new_tile = Sprite3D.new()
 	new_tile.texture = TRAWA
 	new_tile.rotate_x(-PI/2)
@@ -119,14 +116,7 @@ func _ready():
 	{"tile" : CLIFFCORNER_2, "walls" : [[0,0,0],[0,2,0],[0,2,0],[0,0,0]]},
 	{"tile" : ROAD_GRASS_CORNER, "walls" : [[1,1,0],[0,1,1],[1,1,1],[1,1,1]]},
 	{"tile" : WATERCORNER, "walls" : [[0,0,0],[0,2,3],[3,2,0],[0,0,0]]}]
-	
-	all_cells_copy = []
-	all_cells = []
-	for i in map.get_children():
-		if not i is GridMap:
-			i.queue_free()
 	create_tileset()
-	clear()
 	for i in h_size * w_size:
 		all_cells.append({
 			"xy" : i,
@@ -241,42 +231,42 @@ func generate():
 			nextTile = all_cells_copy.pick_random()
 		iterations += 1
 		
-		draw()
+	draw()
 #Places boxes on chosen spots and then replaces them with tiles
 func draw():
 	var t : int = 0
 	#Grid based
-	for x in h_size:
-		for y in w_size:
-			var cell = all_cells[x+y*w_size]
-			if cell["collapsed"] == true:
-				if cell["picked"] == null:
-					pass
-				set_cell_item(Vector3(x*2,0,y*2),cell["picked"])
-	for i in get_used_cells():
-		t += 1
-		if t%2 == 0 : await get_tree().create_timer(0.1).timeout
-		var tile 
-		tile = tiles[get_cell_item(i)].duplicate()
-		tile.position = i
-		map.add_child.call_deferred(tile)
-
-
-
-	###Tile based
-
 	#for x in h_size:
 		#for y in w_size:
 			#var cell = all_cells[x+y*w_size]
 			#if cell["collapsed"] == true:
 				#if cell["picked"] == null:
 					#pass
-				#t += 1
-				#if t%2 == 0 : await get_tree().create_timer(0).timeout
-				#var tile 
-				#tile = tiles[cell["picked"]].duplicate()
-				#tile.position = Vector3(x*1.95,0,y*1.95)
-				#map.add_child.call_deferred(tile)
+				#set_cell_item(Vector3(x*2,0,y*2),cell["picked"])
+	#for i in get_used_cells():
+		#t += 1
+		#if t%2 == 0 : await get_tree().create_timer(0.1).timeout
+		#var tile 
+		#tile = tiles[get_cell_item(i)].duplicate()
+		#tile.position = i
+		#map.add_child.call_deferred(tile)
+
+
+
+	###Tile based
+
+	for x in h_size:
+		for y in w_size:
+			var cell = all_cells[x+y*w_size]
+			if cell["collapsed"] == true:
+				if cell["picked"] == null:
+					pass
+				t += 1
+				if t%2 == 0 : await get_tree().create_timer(0).timeout
+				var tile 
+				tile = tiles[cell["picked"]].duplicate()
+				tile.position = Vector3(x*1.95,0,y*1.95)
+				map.add_child.call_deferred(tile)
 
 
 

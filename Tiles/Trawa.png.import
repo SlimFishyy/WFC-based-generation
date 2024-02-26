@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8cejg4xtit7g"
-path.s3tc="res://.godot/imported/Droga_róg.png-438af49680844bba76451c975d8f5ff2.s3tc.ctex"
+uid="uid://gnqdnq0bqb4j"
+path.s3tc="res://.godot/imported/Trawa.png-fbb422245bd8e93a4738561bb3a4d6db.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Droga_róg.png"
-dest_files=["res://.godot/imported/Droga_róg.png-438af49680844bba76451c975d8f5ff2.s3tc.ctex"]
+source_file="res://Tiles/Trawa.png"
+dest_files=["res://.godot/imported/Trawa.png-fbb422245bd8e93a4738561bb3a4d6db.s3tc.ctex"]
 
 [params]
 

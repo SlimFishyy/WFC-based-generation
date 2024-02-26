@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kgdvdyccj8i0"
-path.s3tc="res://.godot/imported/SOUTH.png-04d7ecd1e60ee99260acdd4ad9f2cf16.s3tc.ctex"
+uid="uid://drjb7a2cnj7ga"
+path.s3tc="res://.godot/imported/Droga.png-87d0c41838d51fdbed75331dcfd39ec3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://SOUTH.png"
-dest_files=["res://.godot/imported/SOUTH.png-04d7ecd1e60ee99260acdd4ad9f2cf16.s3tc.ctex"]
+source_file="res://Tiles/Droga.png"
+dest_files=["res://.godot/imported/Droga.png-87d0c41838d51fdbed75331dcfd39ec3.s3tc.ctex"]
 
 [params]
 

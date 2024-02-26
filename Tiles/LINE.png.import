@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7mr86qrk50r4"
-path.s3tc="res://.godot/imported/Woda_róg.png-8969ef38c91dbb9b601a882667e6d174.s3tc.ctex"
+uid="uid://du6vave5csgmw"
+path.s3tc="res://.godot/imported/LINE.png-e311d75c9643354fcf47114f5feb2ce8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Woda_róg.png"
-dest_files=["res://.godot/imported/Woda_róg.png-8969ef38c91dbb9b601a882667e6d174.s3tc.ctex"]
+source_file="res://Tiles/LINE.png"
+dest_files=["res://.godot/imported/LINE.png-e311d75c9643354fcf47114f5feb2ce8.s3tc.ctex"]
 
 [params]
 

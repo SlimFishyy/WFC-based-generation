@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ibtinh1cpcf0"
-path.s3tc="res://.godot/imported/WEST.png-bf915f4039038526531349eeb16d4795.s3tc.ctex"
+uid="uid://b7mr86qrk50r4"
+path.s3tc="res://.godot/imported/Woda_róg.png-e168957c916d2eb9da8abd21f6226e34.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://WEST.png"
-dest_files=["res://.godot/imported/WEST.png-bf915f4039038526531349eeb16d4795.s3tc.ctex"]
+source_file="res://Tiles/Woda_róg.png"
+dest_files=["res://.godot/imported/Woda_róg.png-e168957c916d2eb9da8abd21f6226e34.s3tc.ctex"]
 
 [params]
 
